@@ -1,7 +1,73 @@
+body {
+  background: #161822;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: aliceblue;
+}
+
+hr {
+  margin: 2em 4em;
+}
+img {
+  border-radius: 2px;
+}
+
 .navbar {
   padding: 35px 0 20px 0;
 }
 
 .navbar-logo {
   padding: 13px 15px;
+}
+
+.site-nav-wrapper {
+  padding: 0 85px;
+}
+
+.home-01 {
+  margin: 0 auto;
+  text-align: justify;
+  text-align-last: center;
+  padding: 0 20em;
+}
+
+.home-01 p {
+  padding: 1em 0;
+}
+
+.home-02 {
+  text-align: justify;
+  text-align-last: left;
+}
+.home-02 img {
+  padding: 0 1em;
+}
+.home-02-item {
+  padding: 0 2em;
+}
+
+.home-03-title {
+  text-align: center;
+}
+
+.home-03-section1,
+.home-03-section2,
+.home-03-section3 {
+  text-align: justify;
+  text-align-last: left;
+}
+
+.home-04 {
+  margin: 2em 4em;
+  padding: 4em 2em;
+  background-color: #4a61dd;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    color-stop(0, #4a61dd),
+    to(#2742cc)
+  );
+  background: linear-gradient(to right top, #4a61dd 0, #2742cc 100%);
+  border: 1px solid gray;
 }
