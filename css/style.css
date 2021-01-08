@@ -104,7 +104,8 @@ hr {
 }
 
 .site-nav-wrapper,
-.footer-nav {
+.footer-nav,
+.footer-social {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,7 +113,8 @@ hr {
 }
 
 .sit-nav-wrapper *,
-.footer-nav * {
+.footer-nav *,
+.footer-social * {
   display: inline;
 }
 
