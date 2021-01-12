@@ -24,6 +24,8 @@ h6 {
   z-index: -1;
   fill: #25282c;
   fill-rule: evenodd;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 img {
