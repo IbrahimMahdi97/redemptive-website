@@ -14,12 +14,18 @@ h5,
 h6 {
   color: aliceblue;
 }
-/* .background-img {
+
+.background-img {
   display: inline;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
   fill: #25282c;
   fill-rule: evenodd;
-} */
+}
+
 img {
   border-radius: 2px;
 }
@@ -30,93 +36,19 @@ img {
 }
 
 div.navbar-header {
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
 }
+
 div.container-fluid {
   display: flex !important;
   flex-flow: row wrap !important;
   align-items: baseline !important;
 }
-#mobile-nav-open-btn {
-  font-size: 25px;
-  cursor: pointer;
-  z-index: 2;
 
-  /* position: absolute; */
-  top: 6px;
-  /* Hide mobile nav open btn */
-  display: none;
-}
-
-#mobile-nav {
-  /* by default mobile nav will be hidden with height 0% */
-  height: 0%;
+.nav-bar-menu {
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  background-color: RGBA(255, 255, 255, 0.9);
-  transition: all 300ms linear;
-  -webkit-transition: all 300ms linear;
-  -moz-transition: all 300ms linear;
-  -ms-transition: all 300ms linear;
-  -o-transition: all 300ms linear;
-  overflow-y: hidden;
-}
-
-#mobile-nav-close-btn {
-  font-size: 40px;
-  color: #212226;
-  font-weight: 400;
-  cursor: pointer;
-  position: absolute;
-  top: -5px;
-  right: 13px;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-
-#mobile-nav-content {
-  text-align: center;
-  width: 100%;
-  margin-top: 30px;
-  position: relative;
-  top: 10%;
-}
-
-#mobile-nav ul li {
-  margin-bottom: 20px;
-}
-
-#mobile-nav a {
-  font-size: 18px;
-  color: #212226;
-  font-weight: 400;
-  text-transform: uppercase;
-  display: inline;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-
-@media (max-width: 767px) {
-  #mobile-nav-open-btn {
-    display: block;
-  }
-
-  .home-01 p {
-    font-size: 1.25em;
-    padding: 1em 10%;
-  }
-  div.nav-bar-menu {
-    display: none;
-  }
+  right: 0;
 }
 
 hr {
@@ -135,7 +67,8 @@ hr {
 .footer-nav,
 .footer-social {
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: baseline;
   align-items: center;
   height: 80px;
 }
@@ -161,10 +94,10 @@ ul.list-reset > li > a {
 }
 
 .home-01 {
-  margin: 5em auto;
+  margin: 4em auto;
   text-align: center;
   text-align-last: center;
-  padding: 0 5em;
+  padding: 0 4em;
 }
 
 .home-01 p {
@@ -254,4 +187,8 @@ ul.list-reset > li > a {
   padding: 15px;
   color: #4a61dd;
   background-color: #dde2f4;
+}
+
+.copy-right {
+  float: left;
 }
